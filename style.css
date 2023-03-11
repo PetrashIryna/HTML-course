@@ -1,0 +1,167 @@
+/*for all screen sizes*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+}
+
+.home-section {
+	text-align: center;
+}
+
+.wrap {
+	display: grid;
+	/*display: inline-grid;*/
+	/*margin: auto; не пишемо, якщо не працює властивість*/
+	/*min-height: 1000px;*/
+	/*min-height: 100vh;*/
+	grid-template-columns: repeat(3, 200px [col-start]);
+	column-gap: 10px;
+	row-gap: 15px;
+	grid-template-rows: 80px auto 80px; 
+	justify-items: end;
+	justify-content: center;
+}
+
+.item {
+	/*max-width: 300px;
+	min-height: 100px;*/
+	width: 100px;
+	background: red;
+	height: 50px;
+	/*margin: 10px 15px;*/
+}
+
+.about {
+	min-height: 500px;
+	background: greenyellow;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+h1 {
+	color:  blueviolet;
+	font-size: 40px;
+}
+
+.slide {
+	background: yellow;
+}
+
+.owl-carousel button.owl-dot {
+	width: 10px;
+    height: 10px;
+    background: violet;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.owl-dots {
+	text-align: center;
+}
+
+.owl-carousel button.owl-dot.active {
+    background: red;
+}
+
+
+
+
+
+/*@media only screen and (max-width: 768px) {
+	.about {
+		background: aqua;
+	}
+
+	h1 {
+		color:  yellow;
+		font-size: 60px;
+	}
+
+}
+
+@media only screen and (width: 601px) and (height: 800px) {
+  div.example {
+    font-size: 80px;
+  }
+}*/
+
+@media only screen and (min-width: 1561px) {
+	/*1561-1920*/
+	.about {
+		background: pink;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	/*280px - 1200px*/
+	.about {
+		background: blue;
+	}
+}
+@media only screen and (max-width: 991px) {
+	/*320px - 991px*/
+	.home-section {
+		padding-top:  50px;
+		padding-bottom:  50px;
+	}
+	.wrap {
+		display: block;
+	}
+
+	.item {
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+	}
+
+	.about {
+		background: green;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/*320px - 768px*/
+	
+	.about {
+		background: gold;
+		text-align: right;
+	}
+}
+@media only screen and (max-width: 575px) {
+	/*320px - 575px*/
+	.about p {
+		display: none;
+	}
+	.about {
+		background: brown;
+	}
+}
+
+
+/*
+1566 - 1920 - large desktop
+1201-1560 - desktop
+769 - 1200 - tablet
+320 - 768 - mobile
+*/
+
+
+
+
+
+
+
+
+
+
+
+
